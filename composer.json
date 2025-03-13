@@ -1,23 +1,24 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "leasy/leasy",
+    "description": "Leasy is a Laravel package that trying to make everything easy.",
     "keywords": [
-        ":vendor_name",
+        "leasy",
         "laravel",
-        ":package_slug"
+        "leasy"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/RobinThijsen/leasy",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Robin Thijsen",
+            "email": "robinthijsen.pro@gmail.com",
             "role": "Developer"
         }
     ],
     "require": {
-        "php": "^8.4",
+        "php": "^8.2",
         "spatie/laravel-package-tools": "^1.16",
+        "livewire/livewire": "v3.5",
         "illuminate/contracts": "^10.0||^11.0"
     },
     "require-dev": {
@@ -35,13 +36,13 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src/",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories/"
+            "Leasy\\Leasy\\": "src/",
+            "Leasy\\Leasy\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests/",
+            "Leasy\\Leasy\\Tests\\": "tests/",
             "Workbench\\App\\": "workbench/app/"
         }
     },
@@ -63,10 +64,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "Leasy\\Leasy\\LeasyServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
+                "Leasy": "Leasy\\Leasy\\Facades\\Leasy"
             }
         }
     },

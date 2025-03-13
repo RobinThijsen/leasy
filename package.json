@@ -1,0 +1,21 @@
+{
+    "name": "@leasy/leasy-npm",
+    "version": "1.0.0",
+    "description": "",
+    "style": "./resources/dist/css/leasy.min.css",
+    "main": "./resources/dist/js/leasy.min.js",
+    "scripts": {
+        "dev": "npx tailwindcss -i ./npm/css/leasy.scss -o ./resources/dist/css/leasy.min.css --watch --minify",
+        "build": "npx tailwindcss -i ./npm/css/leasy.scss -o ./resources/dist/css/leasy.min.css --minify && uglifyjs ./npm/js/leasy.js -o ./resources/dist/js/leasy.min.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/RobinThijsen/leasy.git"
+    },
+    "private": true,
+    "dependencies": {
+        "tailwindcss": "^3.4.17",
+        "jquery": "^3.7.1",
+        "uglify-js": "^3.19.3"
+    }
+}
